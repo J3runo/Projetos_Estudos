@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revenda</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="Titulo">
-      <h1>Concecionaria Senai</h1>
-    </div>
-    <div class="container-cadastro-cont">
-      <div class="cadastro">
-        <h2> Cadastrar Veiculo</h2>
-        <div class="dados-veiculos">
-          <label> modelo</label>
-          <input id="Modelo" type="text">
-          <label>cor</label>
-          <input id="cor" type="text">
-          <label>Ano</label>
-          <input id="ano" type="text">
-          <label>preco</label>
-          <input id="preco" type="text">
-          <label>foto</label>
-          <input id="foto" type="text">
+  <body>
+    <div class="container">
+      <div class="Titulo">
+        <h1>Concessionaria Senai</h1>
+      </div>
+      <div class="container-cadastro-cont">
+        <div class="cadastro">
+          <h2>Cadastrar Veiculo</h2>
+          <div class="dados-veiculos">
+            <label> modelo</label>
+            <input id="Modelo" type="text" />
+            <label>cor</label>
+            <input id="cor" type="text" />
+            <label>Ano</label>
+            <input id="ano" type="text" />
+            <label>preco</label>
+            <input id="preco" type="text" />
+            <label>foto</label>
+            <input id="foto" type="text" />
+          </div>
+          <button id="btn-cadastro" onclick="cadastrar()">Cadastrar</button>
         </div>
-        <button id="btn-cadastro" onclick="cadastrar()">Cadastrar</button>
-      </div>
-      
-      <div>
-        <ul id="lista-carros"></ul>
+
+        <div>
+          <ul id="lista-carros"></ul>
+        </div>
       </div>
     </div>
-  </div>
-  
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
